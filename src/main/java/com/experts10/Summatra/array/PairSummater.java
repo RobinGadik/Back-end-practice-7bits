@@ -9,8 +9,8 @@ class PairSummater implements IArraySummater {
 	/**
 	 *
 	 * @param array - input array
-	 * @return int - max pair sum
-	 * @throws ArraySummaterException - array.lenght must be 2^N and null array
+	 * @return int - max pair sum, INTEGER.MIN_VALUE if empty array
+	 * @throws ArraySummaterException - array.lenght must be 2*N and null array
 	 */
 
 	public int sum(final int[] array) throws ArraySummaterException {
@@ -27,7 +27,7 @@ class PairSummater implements IArraySummater {
 			}
 		}
 
-		return 0;
+		return max;
 	}
 
 }
