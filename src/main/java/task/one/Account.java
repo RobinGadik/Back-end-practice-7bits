@@ -15,4 +15,10 @@ public class Account {
     public String toString() {
         return String.format("Account id: %s with balance %s", id, balance);
     }
+
+    public void addToBalance(long value) throws Exception {
+        long balance = this.balance;
+        Thread.sleep(1);
+        this.balance = balance + value;
+    }
 }
