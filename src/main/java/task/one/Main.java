@@ -44,6 +44,8 @@ public class Main {
            System.out.println(a.toString());
        }
 
+       System.out.println(op.max(acc));
+
    }
 
 }

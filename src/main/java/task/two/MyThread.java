@@ -12,8 +12,10 @@ class MyThread extends Thread {
         System.out.println("Hi from " + Thread.currentThread().getName());
         while (!interrupted()) {
             try {
-                ac.addToBalance(a);
 
+                synchronized (ac) {
+                    ac.addToBalance(a);
+                }
             } catch (InterruptedException e) {
                 System.out.println("Good by from " + Thread.currentThread().getName());
                 break;

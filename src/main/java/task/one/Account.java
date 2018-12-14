@@ -2,7 +2,7 @@ package task.one;
 
 import java.util.UUID;
 
-public class Account {
+public class Account implements Comparable<Account> {
     private String id;
     private long balance;
 
@@ -20,5 +20,11 @@ public class Account {
         long balance = this.balance;
         Thread.sleep(1);
         this.balance = balance + value;
+    }
+
+
+    @Override
+    public int compareTo(Account o) {
+        return Long.compare(balance, o.balance);
     }
 }
