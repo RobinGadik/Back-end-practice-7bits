@@ -1,51 +1,39 @@
 package task.one;
 
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
+/**
+ *
+ */
+class Main {
+    /**
+     * @param args example, empty input
+     */
+    public static void main(final String[] args) {
+        StringBuilder sb = new StringBuilder();
+        try (FileInputStream fin = new FileInputStream("Homework3.txt")) {
+            System.out.printf("File size: %d bytes \n", fin.available());
 
-public class Main {
+            int i;
+            while ((i = fin.read()) != -1) {
+                sb.append((char) i);
+            }
+        } catch (IOException ex) {
+            System.out.println(ex.getMessage());
+        }
 
-   public static void main(String[] args) {
-       ListOperator op = new ListOperator();
+        String text = "Kolomeytzev"; // строка для записи
+        try (FileOutputStream fos = new FileOutputStream("MyHomework.txt")) {
+            byte[] buffer = sb.toString().getBytes();
+            fos.write(buffer, 0, buffer.length);
+            buffer = text.getBytes();
+            fos.write(buffer, 0, buffer.length);
+        } catch (IOException ex) {
+            System.out.println(ex.getMessage());
+        }
 
-       List<Integer> list = new ArrayList<Integer>();
 
-       list.add(1);
-       list.add(2);
-       list.add(3);
-       list.add(4);
-       list.add(5);
-
-       int c = op.max(list);
-       System.out.println("MAX int from 1-5 is ");
-       System.out.println(c);
-
-       List<Account> acc = new LinkedList<Account>();
-
-       acc.add(new Account(1));
-       acc.add(new Account(2));
-       acc.add(new Account(3));
-       acc.add(new Account(4));
-       acc.add(new Account(5));
-
-       System.out.println("Original list");
-
-       for (Account a : acc) {
-           System.out.println(a.toString());
-       }
-
-       op.changeElementsPosition(acc, 1 , 3);
-
-       System.out.println("After 2-4 swap ");
-
-       for (Account a : acc) {
-           System.out.println(a.toString());
-       }
-
-       System.out.println(op.max(acc));
-
-   }
-
+    }
 }
