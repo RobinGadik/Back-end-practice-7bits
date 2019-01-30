@@ -1,0 +1,63 @@
+./
+../
+.android/
+.bash_history
+.conda/
+.gitconfig
+.IdeaIC2017.2/
+.ipython/
+.jupyter/
+.keras/
+.m2/
+.matplotlib/
+.oracle_jre_usage/
+.packettracer
+.spyder-py3/
+.ssh/
+.VirtualBox/
+.visdom/
+.vscode/
+3D Objects/
+AppData/
+Application Data@
+Cisco Packet Tracer 7.0/
+Contacts/
+Cookies@
+Desktop/
+Doctor Web/
+Documents/
+Downloads/
+Favorites/
+Homework3.txt
+IdeaProjects/
+ilya
+IntelGraphicsProfiles/
+Links/
+Local Settings@
+MicrosoftEdgeBackups/
+Music/
+NetHood@
+NTUSER.DAT
+ntuser.dat.LOG1
+ntuser.dat.LOG2
+NTUSER.DAT{634ec5e5-8546-11e8-984b-4c72b9e357cc}.TM.blf
+NTUSER.DAT{634ec5e5-8546-11e8-984b-4c72b9e357cc}.TMContainer00000000000000000001.regtrans-ms
+NTUSER.DAT{634ec5e5-8546-11e8-984b-4c72b9e357cc}.TMContainer00000000000000000002.regtrans-ms
+ntuser.ini
+OneDrive/
+Pictures/
+PrintHood@
+Recent@
+Saved Games/
+scikit_learn_data/
+Searches/
+SendTo@
+Tracing/
+Videos/
+VirtualBox VMs/
+Zomboid/
+Ð³Ð»Ð°Ð²Ð½Ð¾Ðµ Ð¼ÐµÐ½Ñ@
+ÐÐ¾Ð¸ Ð´Ð¾ÐºÑÐ¼ÐµÐ½ÑÑ@
+Ð¨Ð°Ð±Ð»Ð¾Ð½Ñ@
+Ð Ð»Ð°ÑÑÐ¸Ðº Ð¿ÑÐ¾ÑÑÐ¾ Ð¾ÑÐºÑÑÐ²Ð°Ð»ÑÑ
+Kolomeytzev
